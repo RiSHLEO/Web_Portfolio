@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #dfe9f3, #ffffff);
+    color: #333;
+}
+
+a {
+    color: #4a76ee;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #8da4ff;
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right, #1a1a1a, #4a76ee);
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.8em;
+    text-align: justify;
+}
+
+
+nav {
+    padding: 15px;
+    text-align: center;
+    background: rgba(26, 26, 26, 0.8);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+nav a {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #4a76ee;
+    color: white;
+    box-shadow: 0px 0px 10px rgba(74, 118, 238, 0.6);
+}
+
+section {
+    padding: 50px;
+    max-width: 1200px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 12px 25px rgba(74, 118, 238, 0.3);
+}
+
+#personal-info article {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+}
+
+#personal-info img {
+    width: 250px;
+    border-radius: 50%;
+    border: 5px solid #4a76ee;
+}
+
+#personal-info img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(74, 118, 238, 0.6);
+}
+
+#personal-info p {
+    max-width: 500px;
+}
+
+table {
+    width: 100%;
+    margin-top: 30px;
+    font-size: 18px;
+    border-collapse: collapse;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 8px;
+}
+
+th,
+td {
+    padding: 12px 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #4a76ee;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+tr:hover td {
+    background-color: #e0e0e0;
+    transform: translateX(5px);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.skills-list {
+    padding-left: 20px;
+    list-style-type: square;
+    font-size: 22px;
+    line-height: 1.6;
+}
+
+.skills-list li {
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.skills-list li::marker {
+    color: #4a76ee;
+    font-size: 18px;
+}
+
+#Skills article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+#Skills img {
+    width: 250px;
+    border: 3px solid #4a76ee;
+}
+
+#Skills img:hover {
+    transform: scale(1.1);
+}
+
+#hobbies p{
+    margin-bottom: 50px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right, #1a1a1a, #4a76ee);
+    color: white;
+    font-size: 18px;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+footer a {
+    color: #04fffb;
+    text-decoration: none;
+}
+
+footer p {
+    text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        position: static;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    #personal-info article {
+        flex-direction: column;
+    }
+
+    #personal-info img {
+        width: 180px;
+    }
+
+    #Skills article {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #Skills img {
+        width: 180px;
+    }
+
+    .skills-list {
+        font-size: 16px;
+        line-height: 1.4;
+        text-align: left;
+    }
+
+    .skills-list li::marker {
+        font-size: 14px;
+    }
+
+    table {
+        font-size: 12px;
+        width: 100%;
+    }
+
+    th,
+    td {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+}
